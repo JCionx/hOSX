@@ -2,7 +2,7 @@
 
 A web-based Operating System focusing on speed and privacy.
 
-> [!WARNING] Warning
+> [!WARNING]  
 > This is incomplete and unstable! It's not yet intended for regular use.
 
 To install the dependencies, run the `setup.sh` file.
