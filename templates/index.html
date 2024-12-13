@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>htmlOS Plus</title>
+</head>
+<body>
+    <div id="windows">
+        <div class="window" id="default-window">
+            <div class="title-bar">
+                <div class="title-bar-controls">
+                    <button aria-label="Close" class="close-btn"></button>
+                    <button aria-label="Minimize" class="min-btn"></button>
+                    <button aria-label="Maximize" class="max-btn"></button>
+                </div>
+                <div class="title-bar-text" id="title"></div>
+                <div class="spacer" style="width: 60px;"></div>
+            </div>
+            <div class='resizers'>
+                <div class='resizer top-left'></div>
+                <div class='resizer top-right'></div>
+                <div class='resizer bottom-left'></div>
+                <div class='resizer bottom-right'></div>
+            </div>
+            <iframe src="" frameborder="0" class="content"></iframe>
+            </div>
+        </div>
+    </div>
+    <form id="form-multiple-files">
+        <input type="file" name="files" multiple>
+        <input type="text" name="path">
+    </form>
+    <form id="form-single-file">
+        <input type="file" name="file" id="input-single-file">
+        <input type="text" name="path">
+    </form>
+    <div class="dev-menu">
+        <button onclick="openApp('sys.hosp.filemanager')">Open File Manager</button>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>

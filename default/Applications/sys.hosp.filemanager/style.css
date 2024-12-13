@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.files {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-grow: 1;
+    overflow-y: auto;
+    height: calc(100% - 102px);
+    margin: 0 10px 10px 10px;
+}
+
+.file, .folder {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.file button span, .folder button span {
+    cursor: pointer;
+}
+
+#openbtn {
+    width: 100%;
+    text-align: left;
+}
+
+#default-file, #default-folder {
+    display: none;
+}
+
+.navigation-buttons {
+    margin: 0 10px 10px 10px;
+}
+
+#file-input {
+    display: none;
+}
